@@ -1,11 +1,8 @@
 import 'package:amptric/screens/components/bottom_nav.dart';
-//import 'package:amptric/screens/pages/onboarding.dart';
-//import 'package:amptric/screens/components/app_bar.dart';
-//import 'package:amptric/screens/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'values/constants.dart';
+import 'style/constants.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

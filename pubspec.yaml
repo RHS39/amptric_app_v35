@@ -29,7 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.6
-  curved_navigation_bar: ^1.0.6
+  curved_labeled_navigation_bar: ^2.0.2
   flutter:
     sdk: flutter
   flutter_launcher_icons: ^0.13.1
@@ -64,7 +64,7 @@ flutter:
     - assets/img/trips.png
     - assets/img/docs.png
     - assets/img/more.png
-    
+
     - assets/img/gift.png
     # - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

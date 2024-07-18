@@ -1,5 +1,5 @@
 import "package:flutter/material.dart";
-import "package:amptric/values/constants.dart";
+import "package:amptric/style/constants.dart";
 
 class AmpAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title = "AMPTRIC";
@@ -20,8 +20,10 @@ class AmpAppBar extends StatelessWidget implements PreferredSizeWidget {
         // start profile icon
         leading: Builder(
             builder: (context) => IconButton(
-                  icon: Image.asset('assets/img/user.png'),
-                  iconSize: 5,
+                  icon: Image.asset(
+                    'assets/img/user.png',
+                    height: 40,
+                  ),
                   onPressed: () {
                     Scaffold.of(context).openDrawer();
                   },
@@ -33,7 +35,10 @@ class AmpAppBar extends StatelessWidget implements PreferredSizeWidget {
             child: Text(
           title,
           style: const TextStyle(
-              fontFamily: 'superstar', letterSpacing: 4.0, fontSize: 30),
+              fontFamily: 'superstar',
+              letterSpacing: 4.0,
+              fontSize: 35,
+              color: Colors.white),
         )),
         //end title
 
@@ -43,8 +48,10 @@ class AmpAppBar extends StatelessWidget implements PreferredSizeWidget {
           // start qr icon
           Builder(
               builder: (context) => IconButton.filled(
-                    icon: Image.asset('assets/img/qr.png'),
-                    iconSize: 5,
+                    icon: Image.asset(
+                      'assets/img/qr.png',
+                      height: 30,
+                    ),
                     style: IconButton.styleFrom(
                       backgroundColor: Colors.white,
                     ),
@@ -59,9 +66,7 @@ class AmpAppBar extends StatelessWidget implements PreferredSizeWidget {
               builder: (context) => IconButton(
                     icon: Image.asset('assets/img/bell.png'),
                     iconSize: 5,
-                    onPressed: () {
-                      Scaffold.of(context).openDrawer();
-                    },
+                    onPressed: () {},
                   )),
           // end bell icon
         ]

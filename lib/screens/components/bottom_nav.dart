@@ -3,9 +3,12 @@ import "package:amptric/screens/pages/map.dart";
 import "package:amptric/screens/pages/more.dart";
 import "package:amptric/screens/pages/onboarding.dart";
 import "package:amptric/screens/pages/trip.dart";
-import "package:amptric/values/constants.dart";
-import "package:curved_navigation_bar/curved_navigation_bar.dart";
+import "package:amptric/style/constants.dart";
+//import "package:curved_navigation_bar/curved_navigation_bar.dart";
 import "package:flutter/material.dart";
+
+import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
+import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -39,7 +42,7 @@ class _BottomNavState extends State<BottomNav> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: CurvedNavigationBar(
-          height: kToolbarHeight,
+          height: kToolbarHeight + 10,
           backgroundColor: Colors.white,
           color: priAmpColor,
           animationDuration: const Duration(milliseconds: 300),
@@ -49,51 +52,57 @@ class _BottomNavState extends State<BottomNav> {
             });
           },
           items: [
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Image.asset(
-                  'assets/img/dashb.png',
+            // start home
+            CurvedNavigationBarItem(
+              child: Image.asset(
+                'assets/img/dashb.png',
+                height: 40,
+              ),
+              label: 'Home',
+            ),
+            //end home
+
+            // start charge
+            CurvedNavigationBarItem(
+              child: Image.asset(
+                'assets/img/charging.png',
+                height: 40,
+              ),
+              label: 'Charging',
+            ),
+            //end charge
+
+            // start trips
+            CurvedNavigationBarItem(
+              child: Image.asset(
+                'assets/img/trips.png',
+                height: 30,
+              ),
+              label: 'My Trips',
+            ),
+            //end trips
+
+            // start docs
+            CurvedNavigationBarItem(
+              child: Center(
+                child: Image.asset(
+                  'assets/img/docs.png',
                   height: 30,
                 ),
-                const Positioned(
-                    top: 20.0,
-                    left: 0.0,
-                    right: 0.0,
-                    child: Text(
-                      "Home",
-                      style: TextStyle(color: Colors.white, fontSize: 10.0),
-                    ))
+              ),
+              label: 'Docs',
+            ),
+            //end Docs
 
-                /*Container(
-                  margin: const EdgeInsets.only(top: 5.0),
-                  child: const Text(
-                    "Home",
-                    style: TextStyle(
-                      fontSize: 10,
-                    ),
-                  ),
-                )
-                */
-              ],
+            // start more
+            CurvedNavigationBarItem(
+              child: Image.asset(
+                'assets/img/more.png',
+                height: 40,
+              ),
+              label: 'More',
             ),
-            Image.asset(
-              'assets/img/charging.png',
-              height: 30,
-            ),
-            Image.asset(
-              'assets/img/trips.png',
-              height: 30,
-            ),
-            Image.asset(
-              'assets/img/docs.png',
-              height: 30,
-            ),
-            Image.asset(
-              'assets/img/more.png',
-              height: 30,
-            ),
+            //end more
           ]),
       body: pages[currentTabIndex],
     );

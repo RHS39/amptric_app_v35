@@ -1,4 +1,4 @@
-import "package:amptric/values/constants.dart";
+import "package:amptric/style/constants.dart";
 import "package:amptric/screens/components/drawer_items.dart";
 import "package:amptric/screens/pages/profile.dart";
 import "package:flutter/material.dart";

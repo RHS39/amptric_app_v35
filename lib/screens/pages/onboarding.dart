@@ -1,7 +1,7 @@
 import "package:amptric/screens/components/app_bar.dart";
 import "package:amptric/screens/components/drawer.dart";
 import "package:flutter/material.dart";
-import "package:amptric/values/constants.dart";
+import "package:amptric/style/constants.dart";
 
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});

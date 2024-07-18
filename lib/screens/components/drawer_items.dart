@@ -1,4 +1,4 @@
-import "package:amptric/values/constants.dart";
+import "package:amptric/style/constants.dart";
 import "package:flutter/material.dart";
 //import "package:google_fonts/google_fonts.dart";
 
