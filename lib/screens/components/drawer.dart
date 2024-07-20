@@ -1,6 +1,7 @@
 import "package:amptric/style/constants.dart";
 import "package:amptric/screens/components/drawer_items.dart";
 import "package:amptric/screens/pages/profile.dart";
+import "package:amptric/style/text_style.dart";
 import "package:flutter/material.dart";
 
 class AmpDrawer extends StatelessWidget {
@@ -76,25 +77,29 @@ class AmpDrawer extends StatelessWidget {
   }
 
   Widget headerWidget() {
-    return const Row(
+    return Row(
       children: [
-        Image(
+        const Image(
           image: AssetImage('assets/img/user.png'),
           height: 80,
         ),
-        SizedBox(
+        const SizedBox(
           width: 20,
         ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Sachin Singh',
-                style: TextStyle(fontSize: 14, color: priAmpColor)),
-            SizedBox(
+            Text(
+              'Sachin Singh',
+              style: Tfor.drawerInfo(),
+            ),
+            const SizedBox(
               height: 10,
             ),
-            Text('sachin@gmail.com',
-                style: TextStyle(fontSize: 14, color: priAmpColor))
+            Text(
+              'sachin@gmail.com',
+              style: Tfor.drawerInfo(),
+            ),
           ],
         )
       ],
