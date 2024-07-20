@@ -6,6 +6,7 @@ import "package:amptric/screens/pages/trip.dart";
 import "package:amptric/style/constants.dart";
 //import "package:curved_navigation_bar/curved_navigation_bar.dart";
 import "package:flutter/material.dart";
+import "package:amptric/style/text_style.dart";
 
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
 import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
@@ -59,9 +60,9 @@ class _BottomNavState extends State<BottomNav> {
                 height: 40,
               ),
               label: 'Home',
+              labelStyle: Tfor.bottomlabel(),
+              //end home
             ),
-            //end home
-
             // start charge
             CurvedNavigationBarItem(
               child: Image.asset(
@@ -69,6 +70,7 @@ class _BottomNavState extends State<BottomNav> {
                 height: 40,
               ),
               label: 'Charging',
+              labelStyle: Tfor.bottomlabel(),
             ),
             //end charge
 
@@ -79,6 +81,7 @@ class _BottomNavState extends State<BottomNav> {
                 height: 30,
               ),
               label: 'My Trips',
+              labelStyle: Tfor.bottomlabel(),
             ),
             //end trips
 
@@ -91,6 +94,7 @@ class _BottomNavState extends State<BottomNav> {
                 ),
               ),
               label: 'Docs',
+              labelStyle: Tfor.bottomlabel(),
             ),
             //end Docs
 
@@ -101,6 +105,7 @@ class _BottomNavState extends State<BottomNav> {
                 height: 40,
               ),
               label: 'More',
+              labelStyle: Tfor.bottomlabel(),
             ),
             //end more
           ]),

@@ -96,6 +96,10 @@ flutter:
     - family: roboto
       fonts:
         - asset: assets/fonts/roboto.ttf
+        
+    - family: roboto_reg
+      fonts:
+        - asset: assets/fonts/roboto_reg.ttf
 
     - family: ubuntu
       fonts:

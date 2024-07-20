@@ -89,9 +89,10 @@ class AmpDrawer extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               'Sachin Singh',
-              style: Tfor.drawerInfo(),
+              style: TextStyle(
+                  fontSize: 17, color: Colors.black, fontFamily: 'roboto'),
             ),
             const SizedBox(
               height: 10,

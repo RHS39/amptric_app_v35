@@ -1,3 +1,5 @@
+import "dart:math";
+
 import "package:flutter/material.dart";
 import "package:amptric/style/constants.dart";
 
@@ -36,8 +38,8 @@ class AmpAppBar extends StatelessWidget implements PreferredSizeWidget {
           title,
           style: const TextStyle(
               fontFamily: 'superstar',
-              letterSpacing: 4.0,
-              fontSize: 35,
+              letterSpacing: 6.0,
+              fontSize: 38,
               color: Colors.white),
         )),
         //end title
@@ -46,20 +48,30 @@ class AmpAppBar extends StatelessWidget implements PreferredSizeWidget {
         //from left to right
         actions: [
           // start qr icon
-          Builder(
-              builder: (context) => IconButton.filled(
-                    icon: Image.asset(
-                      'assets/img/qr.png',
-                      height: 30,
-                    ),
-                    style: IconButton.styleFrom(
-                      backgroundColor: Colors.white,
-                    ),
-                    onPressed: () {
-                      Scaffold.of(context).openDrawer();
-                    },
-                  )),
-          // end profile
+
+          //test
+          //test
+          //test
+          //test
+          Padding(
+            padding: const EdgeInsets.all(1),
+            child: Container(
+              height: 38,
+              width: 38,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(3.0),
+                color: Colors.white,
+              ),
+              child: Center(
+                child: Image.asset(
+                  'assets/img/qr.png',
+                  height: 32,
+                ),
+              ),
+            ),
+          ),
+
+          // end qr
 
           // stat bell icon
           Builder(
