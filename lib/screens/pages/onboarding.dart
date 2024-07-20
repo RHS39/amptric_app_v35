@@ -3,6 +3,8 @@ import "package:amptric/screens/components/drawer.dart";
 import "package:amptric/style/text_style.dart";
 import "package:flutter/material.dart";
 import "package:amptric/style/constants.dart";
+//import 'package:babylonjs_viewer/babylonjs_viewer.dart';
+import "package:model_viewer_plus/model_viewer_plus.dart";
 
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});
@@ -39,9 +41,36 @@ class _OnboardingState extends State<Onboarding> {
               //greeting end
 
               // reserve for 3D object
-              const SizedBox(
-                height: 330,
-              ),
+              SizedBox(
+                  height: 330,
+                  child: Container(
+                    //color: Colors.green,
+                    margin: const EdgeInsets.symmetric(vertical: 30.0),
+                    child: const ModelViewer(
+                      src: 'assets/testc.glb',
+                      autoRotate: true,
+                      alt: 'A 3D model of Amptric Trike',
+                      //ar: true,
+                      disableZoom: false,
+                    ),
+                  )
+
+                  /*
+                child: BabylonJSViewer(
+                  src: 'assets/test2.glb',
+                ),
+
+                  */
+                  //
+                  /*
+                child: Text(
+                  "testit",
+                  style: Tfor.ite(),
+                ),
+              */
+
+                  //BabylonJsViewr()),
+                  ),
 
               //end reserve
 

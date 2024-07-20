@@ -2,7 +2,9 @@
     <application
         android:label="amptric"
         android:name="${applicationName}"
-        android:icon="@mipmap/launcher_icons">
+        android:icon="@mipmap/launcher_icons"
+        android:usesCleartextTraffic="true"
+        >
         <activity
             android:name=".MainActivity"
             android:exported="true"
