@@ -1,4 +1,6 @@
-/*import "package:amptric/screens/onboarding.dart";
+/*
+// test
+import "package:amptric/screens/onboarding.dart";
 import "package:flutter/material.dart";
 
 class Splash extends StatefulWidget {

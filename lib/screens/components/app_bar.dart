@@ -20,16 +20,18 @@ class AmpAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
         backgroundColor: priAmpColor,
         // start profile icon
-        leading: Builder(
-            builder: (context) => IconButton(
-                  icon: Image.asset(
-                    'assets/img/user.png',
-                    height: 40,
-                  ),
-                  onPressed: () {
-                    Scaffold.of(context).openDrawer();
-                  },
-                )),
+        leading: Container(
+          padding: const EdgeInsets.only(left: 0),
+          child: Builder(
+              builder: (context) => IconButton(
+                    icon: Image.asset(
+                      'assets/img/user.png',
+                    ),
+                    onPressed: () {
+                      Scaffold.of(context).openDrawer();
+                    },
+                  )),
+        ),
         // end profile
 
         //start title
