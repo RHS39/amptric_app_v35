@@ -50,7 +50,7 @@ class _OnboardingState extends State<Onboarding> {
                     //color: Colors.green,
                     margin: const EdgeInsets.symmetric(vertical: 30.0),
                     child: const ModelViewer(
-                      src: 'assets/testc.glb',
+                      src: 'assets/amp.glb',
                       autoRotate: true,
                       alt: 'A 3D model of Amptric Trike',
                       //ar: true,

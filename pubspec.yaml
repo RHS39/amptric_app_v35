@@ -33,6 +33,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_launcher_icons: ^0.13.1
+  flutter_map: ^7.0.2
   google_fonts: ^6.2.1
   model_viewer_plus: ^1.8.0
 
@@ -74,7 +75,7 @@ flutter:
     - assets/img/dashb/tpm.png
     # 3D
     - assets/testc.glb
-    - assets/test2.glb
+    - assets/amp.glb
 
     - assets/img/gift.png
     # - images/a_dot_burr.jpeg
@@ -96,7 +97,7 @@ flutter:
     - family: roboto
       fonts:
         - asset: assets/fonts/roboto.ttf
-        
+
     - family: roboto_reg
       fonts:
         - asset: assets/fonts/roboto_reg.ttf
