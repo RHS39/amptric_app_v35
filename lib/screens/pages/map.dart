@@ -3,11 +3,12 @@ import "package:amptric/screens/components/drawer.dart";
 import "package:amptric/style/constants.dart";
 import "package:flutter/material.dart";
 
+/*
 import "package:flutter_map/flutter_map.dart";
 import "package:latlong2/latlong.dart";
 import "package:http/http.dart";
 import "dart:convert" as convert;
-
+*/
 class AmpMap extends StatefulWidget {
   const AmpMap({super.key});
 
@@ -25,15 +26,15 @@ class _AmpMapState extends State<AmpMap> {
       appBar: AmpAppBar(),
       body: Center(
           //color: Colors.yellow,
-          child: Stack(
-            children: <Widget>[
+          child: Stack(children: <Widget>[]
+              /*[
               options: new MapOptions(center: tomtomQ, zoom: 13.0),
               layers:[
                 new TileLayerOptions(urlTemplate: "https://api.tomtom.com/map/1/")
-              ],],
-          )
+              ],
+              ],*/
 
-          ),
+              )),
     );
   }
 }

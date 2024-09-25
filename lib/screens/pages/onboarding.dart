@@ -1,5 +1,6 @@
 import "package:amptric/screens/components/app_bar.dart";
 import "package:amptric/screens/components/drawer.dart";
+import "package:amptric/server/user.dart";
 import "package:amptric/style/text_style.dart";
 import "package:flutter/material.dart";
 import "package:amptric/style/constants.dart";

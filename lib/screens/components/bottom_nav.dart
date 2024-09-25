@@ -42,9 +42,10 @@ class _BottomNavState extends State<BottomNav> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: false,
       bottomNavigationBar: CurvedNavigationBar(
           height: kToolbarHeight + 30,
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.transparent,
           color: priAmpColor,
           animationDuration: const Duration(milliseconds: 300),
           onTap: (int index) {

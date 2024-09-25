@@ -21,4 +21,20 @@ class Tfor {
     return const TextStyle(
         fontSize: 15, color: Colors.black, fontFamily: 'roboto');
   }
+
+  static TextStyle label() {
+    return const TextStyle(
+      fontSize: 33,
+      color: Colors.black,
+      fontFamily: 'roboto',
+    );
+  }
+
+  static TextStyle discribe() {
+    return const TextStyle(
+      fontSize: 25,
+      color: Colors.black87,
+      fontFamily: 'roboto',
+    );
+  }
 }

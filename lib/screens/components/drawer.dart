@@ -1,3 +1,6 @@
+import "package:amptric/screens/pages/about.dart";
+import "package:amptric/screens/pages/settings.dart";
+import "package:amptric/server/user.dart";
 import "package:amptric/style/constants.dart";
 import "package:amptric/screens/components/drawer_items.dart";
 import "package:amptric/screens/pages/profile.dart";
@@ -36,7 +39,7 @@ class AmpDrawer extends StatelessWidget {
                   AmpDrawerItems(
                     name: "About",
                     icon: Icons.info,
-                    onPressed: () => onItemPressed(context, index: 0),
+                    onPressed: () => onItemPressed(context, index: 1),
                   ),
 
                   //Contact Us
@@ -50,7 +53,7 @@ class AmpDrawer extends StatelessWidget {
                   AmpDrawerItems(
                     name: "Settings",
                     icon: Icons.settings,
-                    onPressed: () => onItemPressed(context, index: 0),
+                    onPressed: () => onItemPressed(context, index: 3),
                   ),
 
                   // Logout
@@ -72,6 +75,14 @@ class AmpDrawer extends StatelessWidget {
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => const Profile()));
         break;
+      case 1:
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => const About()));
+        break;
+      case 3:
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => const Settings()));
+        break;
       default:
     }
   }
@@ -90,7 +101,7 @@ class AmpDrawer extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Sachin Singh',
+              userName,
               style: TextStyle(
                   fontSize: 17, color: Colors.black, fontFamily: 'roboto'),
             ),
@@ -98,7 +109,7 @@ class AmpDrawer extends StatelessWidget {
               height: 10,
             ),
             Text(
-              'sachin@gmail.com',
+              userEmail,
               style: Tfor.drawerInfo(),
             ),
           ],
