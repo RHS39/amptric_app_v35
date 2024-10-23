@@ -149,19 +149,26 @@ class Profile extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
           child: Row(children: [
-            SizedBox(
-              height: heights * 7,
-              width: widths * 10,
-              child: Image.asset(
-                'assets/img/home.png',
-                height: heights * 8,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 0, 0, 40),
+              child: SizedBox(
+                height: heights * 7,
+                width: widths * 10,
+                child: Image.asset(
+                  'assets/img/home.png',
+                  height: heights * 2,
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.only(left: 30.0),
-              child: Text(
-                "Address",
-                style: Tfor.discribe(),
+              child: SizedBox(
+                height: heights * 12,
+                width: widths * 60,
+                child: Text(
+                  userAddress,
+                  style: Tfor.discribe(),
+                ),
               ),
             ),
           ]),

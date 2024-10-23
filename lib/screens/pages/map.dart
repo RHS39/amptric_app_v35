@@ -2,6 +2,7 @@ import "package:amptric/screens/components/app_bar.dart";
 import "package:amptric/screens/components/drawer.dart";
 import "package:amptric/style/constants.dart";
 import "package:flutter/material.dart";
+import "package:google_maps_flutter/google_maps_flutter.dart";
 
 /*
 import "package:flutter_map/flutter_map.dart";
@@ -18,6 +19,11 @@ class AmpMap extends StatefulWidget {
 
 class _AmpMapState extends State<AmpMap> {
   final String apiKey = "5415a";
+
+  late GoogleMapController mapController;
+
+  late String searchAddress;
+
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
@@ -38,3 +44,25 @@ class _AmpMapState extends State<AmpMap> {
     );
   }
 }
+
+
+
+
+/*
+
+
+ Stack(children: <Widget>[
+          GoogleMap(
+            onMapCreated: onMapCreated,
+          )
+        ])
+
+
+
+    void onMapCreated(Controller) {
+      setState(() {
+        mapController = controller;
+      });
+    }
+
+*/
