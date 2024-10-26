@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const priAmpColor = Color(0xFF56B14E);
+const priLigAmpColor = Color(0x5556B14E);
 const secAmpColor = Color(0xFFF17E01);
 const primaryColor = Color(0xFFFFBB04);
 const secondaryColor = Color(0xFF010101);

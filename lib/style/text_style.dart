@@ -37,4 +37,20 @@ class Tfor {
       fontFamily: 'roboto',
     );
   }
+
+  static TextStyle tripDetail() {
+    return const TextStyle(
+      fontSize: 10,
+      color: Colors.black54,
+      fontFamily: 'roboto',
+    );
+  }
+
+  static TextStyle tripValue() {
+    return const TextStyle(
+      fontSize: 10,
+      color: Colors.black,
+      fontFamily: 'roboto',
+    );
+  }
 }

@@ -1,6 +1,6 @@
 //import "dart:math";
 
-//import "package:amptric/screens/payment/qr_scanner.dart";
+import "package:amptric/screens/payment/qr_scanner.dart";
 import "package:flutter/material.dart";
 import "package:amptric/style/constants.dart";
 
@@ -57,20 +57,28 @@ class AmpAppBar extends StatelessWidget implements PreferredSizeWidget {
           //test
           //test
           Padding(
-            padding: const EdgeInsets.all(1),
+            padding: const EdgeInsets.all(3),
             child: Container(
-              height: 38,
-              width: 38,
+              height: 45,
+              width: 45,
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(3.0),
+                borderRadius: BorderRadius.circular(7.0),
                 color: Colors.white,
               ),
               child: Center(
-                child: Image.asset(
+                  child: IconButton(
+                icon: Image.asset(
                   'assets/img/qr.png',
-                  height: 32,
+                  height: 190,
                 ),
-              ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const QrScanner()));
+                },
+//                    onPressed: () {},
+              )),
             ),
           ),
 
@@ -81,15 +89,7 @@ class AmpAppBar extends StatelessWidget implements PreferredSizeWidget {
               builder: (context) => IconButton(
                     icon: Image.asset('assets/img/bell.png'),
                     iconSize: 5,
-                    onPressed: () {
-                      /*
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const QrScanner()));
-                    
-                    */
-                    },
+                    onPressed: () {},
 //                    onPressed: () {},
                   )),
           // end bell icon
