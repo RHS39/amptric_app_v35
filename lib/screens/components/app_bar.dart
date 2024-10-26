@@ -1,5 +1,6 @@
 //import "dart:math";
 
+//import "package:amptric/screens/payment/qr_scanner.dart";
 import "package:flutter/material.dart";
 import "package:amptric/style/constants.dart";
 
@@ -80,7 +81,16 @@ class AmpAppBar extends StatelessWidget implements PreferredSizeWidget {
               builder: (context) => IconButton(
                     icon: Image.asset('assets/img/bell.png'),
                     iconSize: 5,
-                    onPressed: () {},
+                    onPressed: () {
+                      /*
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const QrScanner()));
+                    
+                    */
+                    },
+//                    onPressed: () {},
                   )),
           // end bell icon
         ]
